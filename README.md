@@ -9,6 +9,7 @@ I'm a Software Engineer and AI Enthusiast, located in Gdańsk, Poland. With a st
 In addition to my professional work, I have recently started to delve into LeetCode to further hone my problem-solving skills. I enjoy tackling interesting and challenging tasks on LeetCode, as it allows me to explore different algorithms, data structures, and optimization techniques. This continuous learning journey helps me stay sharp and up-to-date with the latest developments in the field.
 
 [![LeetCode user ivasik-k7](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Solved&query=solvedOverTotal&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fivasik-k7&logo=leetcode&logoColor=yellow)](https://leetcode.com/u/ivasik-k7/)
+![Profile Views](https://komarev.com/ghpvc/?username=ivasik-k7&color=yellow&label=Views&style=for-the-badge)
 
 ### 🛠️ Skills and Technologies
 
@@ -20,6 +21,8 @@ In addition to my professional work, I have recently started to delve into LeetC
 <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
 <img src="https://img.shields.io/badge/Shell-5391FE?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell" />
 </div>
+
+<!-- ![](https://img.shields.io/static/v1?label=Profile+views&color=007ec6&style=for-the-badge&username=ivasik-k7&color=orange) -->
 
 <div style="display: flex; justify-content: center;">
 <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
@@ -59,6 +62,8 @@ In addition to my professional work, I have recently started to delve into LeetC
 </div>
 <div style="display: flex; justify-content: center;">
 <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch" />
+<img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
+
 <img src="https://img.shields.io/badge/OpenAI-FF4713?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
 <img src="https://img.shields.io/badge/Stable%20Diffusion-3776AB?style=for-the-badge&logoColor=white" alt="Stable Diffusion" />
 </div>
