@@ -1,22 +1,4 @@
-<div class="terminal-frame" style="width: 100%; max-width: 800px; margin: 0 auto; background-color: #2b2b2b; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);">
-   <div class="terminal-header" style="background-color: #212121; padding: 10px; text-align: center; font-size: 16px; color: #f0f0f0; display: flex; justify-content: space-between; align-items: center;">
-      <div style="display: flex; align-items: center;">
-         <div class="circle-button" style="width: 12px; height: 12px; background-color: #ff5f56; border-radius: 50%; margin-right: 6px;"></div>
-         <div class="circle-button" style="width: 12px; height: 12px; background-color: #ffbd2e; border-radius: 50%; margin-right: 6px;"></div>
-         <div class="circle-button" style="width: 12px; height: 12px; background-color: #27c93f; border-radius: 50%; margin-right: 6px;"></div>
-      </div>
-   </div>
-   <div class="terminal" style="padding: 15px;">
-      <div id="history" class="history" style="margin-bottom: 10px;">
-      </div>
-      <div class="input-line" style="display: flex;">
-         <span class="prompt" style="color: #55b4d4; margin-right: 5px;">ikovtun@bash5.2$</span>
-         <input type="text" id="commandInput" class="command-input" autofocus  value='clear' style="background: none; border: none; color: #00ff00; outline: none; width: 100%; font-family: 'Ubuntu Mono', monospace; font-size: 14px;">
-      </div>
-   </div>
-</div>
-
-### Hi there, I'm Ivan Kovtun! 👋
+![Terminal](assets/terminal.svg)
 
 I'm a Software Engineer and AI Enthusiast, located in Gdańsk, Poland. With a strong background in multiple programming languages and technologies, I have a proven track record of developing and optimizing backend services, designing and managing CI/CD pipelines, and leading development teams. My expertise lies in creating robust, efficient, and scalable cloud solutions, ensuring seamless integration and optimal performance.
 
