@@ -1,0 +1,141 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#334155" stroke-width="1" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Gradient for card -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#151932;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#1e2442;stop-opacity:0.95"/>
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="transparent"/>
+  
+  <!-- Animated Grid -->
+  <rect width="1200" height="600" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" 
+                      from="0 0" to="50 50" dur="20s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Background orbs -->
+  <circle cx="200" cy="150" r="150" fill="#6366f1" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="cy" values="150;180;150" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1000" cy="450" r="180" fill="#10b981" opacity="0.08" filter="url(#glow)">
+    <animate attributeName="cy" values="450;420;450" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="600" cy="300" r="120" fill="#3b82f6" opacity="0.06" filter="url(#glow)">
+    <animate attributeName="cx" values="600;630;600" dur="14s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main Content Card -->
+  <rect x="100" y="80" width="1000" height="440" rx="20" fill="url(#cardGrad)" 
+        stroke="#334155" stroke-width="1" filter="url(#shadow)" opacity="0.95"/>
+  
+  <!-- Title -->
+  <text x="600" y="140" font-family="Orbitron, monospace" font-size="36" fill="#e2e8f0" 
+        text-anchor="middle" font-weight="900">
+    About Me
+  </text>
+  
+  <!-- Decorative line -->
+  <line x1="400" y1="160" x2="800" y2="160" stroke="#6366f1" stroke-width="2" opacity="0.5">
+    <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+    <!-- Text Content - Paragraph 1 -->
+    <text x="150" y="220" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150" dy="0">I'm a </tspan>
+    <tspan fill="#6366f1" font-weight="700">Cloud Operations Architect</tspan>
+    <tspan> and </tspan>
+    <tspan fill="#10b981" font-weight="700">AI Enthusiast</tspan>
+    <tspan>, located in </tspan>
+    <tspan font-weight="700">Gdańsk, Poland</tspan>
+    <tspan>. With a strategic and hands-on</tspan>
+    </text>
+
+    <text x="150" y="245" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">background in cloud infrastructure and automation, I specialize in designing, deploying, and optimizing</tspan>
+    </text>
+
+    <text x="150" y="270" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">robust cloud environments using multi-language expertise and DevOps practices. I am experienced in</tspan>
+    </text>
+
+    <text x="150" y="295" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">developing scalable architectures, managing cloud operations, automating CI/CD pipelines, and leading</tspan>
+    </text>
+
+    <text x="150" y="320" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">cross-functional teams to ensure secure, compliant, and high-performance solutions for complex needs.</tspan>
+    </text>
+
+    <!-- Spacing -->
+    <text x="150" y="360" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">Beyond my professional role, I actively explore </tspan>
+    <tspan fill="#3b82f6" font-weight="700">LeetCode</tspan>
+    <tspan> and AI innovations to</tspan>
+    </text>
+
+    <text x="150" y="385" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">sharpen my problem-solving skills, keeping pace with emerging technologies and operational best practices.</tspan>
+    </text>
+
+    <text x="150" y="410" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">LeetCode challenges help me deepen my understanding of algorithms, data structures, and automation,</tspan>
+    </text>
+
+    <text x="150" y="435" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">enabling me to bring innovative solutions to cloud operations and digital transformation initiatives.</tspan>
+    </text>
+
+    <text x="150" y="460" font-family="'Exo 2', sans-serif" font-size="16" fill="#e2e8f0" text-anchor="start">
+    <tspan x="150">Continuous learning is at the core of my approach, keeping me sharp and future-ready.</tspan>
+    </text>
+  
+  <!-- Decorative icons -->
+  <g opacity="0.6">
+    <circle cx="950" cy="250" r="40" fill="#6366f1" opacity="0.1" filter="url(#glow)">
+      <animate attributeName="r" values="35;45;35" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="950" y="265" font-size="40" text-anchor="middle">💻</text>
+  </g>
+  
+  <g opacity="0.6">
+    <circle cx="950" cy="360" r="40" fill="#10b981" opacity="0.1" filter="url(#glow)">
+      <animate attributeName="r" values="35;45;35" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="950" y="375" font-size="40" text-anchor="middle">🚀</text>
+  </g>
+  
+  <g opacity="0.6">
+    <circle cx="1020" cy="300" r="35" fill="#3b82f6" opacity="0.1" filter="url(#glow)">
+      <animate attributeName="r" values="30;40;30" dur="5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1020" y="313" font-size="35" text-anchor="middle">🧠</text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="100" y="515" width="1000" height="3" fill="url(#cardGrad)" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

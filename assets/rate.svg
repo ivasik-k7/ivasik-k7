@@ -1,0 +1,116 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#334155" stroke-width="1" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Gradient for card -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#151932;stop-opacity:0.95"/>
+      <stop offset="100%" style="stop-color:#1e2442;stop-opacity:0.95"/>
+    </linearGradient>
+    
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="transparent"/>
+  
+  <!-- Animated Grid -->
+  <rect width="1200" height="600" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" 
+                      from="0 0" to="50 50" dur="20s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Background orbs - contained within card area -->
+  <circle cx="250" cy="180" r="90" fill="#6366f1" opacity="0.08">
+    <animate attributeName="cy" values="180;160;180" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="950" cy="420" r="110" fill="#10b981" opacity="0.08">
+    <animate attributeName="cy" values="420;400;420" dur="10s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="650" cy="320" r="75" fill="#3b82f6" opacity="0.06">
+    <animate attributeName="cx" values="650;670;650" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Additional smaller orbs -->
+  <circle cx="350" cy="480" r="55" fill="#8b5cf6" opacity="0.06">
+    <animate attributeName="cy" values="480;460;480" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="850" cy="180" r="65" fill="#f59e0b" opacity="0.05">
+    <animate attributeName="cx" values="850;830;850" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main Content Card -->
+  <rect x="100" y="80" width="1000" height="440" rx="20" fill="url(#cardGrad)" 
+        stroke="#334155" stroke-width="1" filter="url(#shadow)" opacity="0.95"/>
+  
+  <!-- Title -->
+  <text x="600" y="180" font-family="Orbitron, monospace" font-size="42" fill="#e2e8f0" 
+        text-anchor="middle" font-weight="900">
+    Please Rate My Project
+  </text>
+  
+  <!-- Project Name -->
+  <text x="600" y="240" font-family="Orbitron, monospace" font-size="48" fill="#6366f1" 
+        text-anchor="middle" font-weight="900">
+    tfkit
+  </text>
+  
+  
+  <!-- Floating GitHub Stars -->
+  <!-- Large central star -->
+  <g transform="translate(600, 380)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="600,380; 600,360; 600,380" dur="3s" repeatCount="indefinite"/>
+    <text font-size="80" text-anchor="middle" fill="#fbbf24">⭐</text>
+  </g>
+  
+  <!-- Smaller floating stars around -->
+  <g transform="translate(450, 320)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="450,320; 450,300; 450,320" dur="3.5s" repeatCount="indefinite"/>
+    <text font-size="40" text-anchor="middle" fill="#f59e0b">⭐</text>
+  </g>
+  
+  <g transform="translate(750, 320)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="750,320; 750,300; 750,320" dur="3.2s" repeatCount="indefinite"/>
+    <text font-size="40" text-anchor="middle" fill="#f59e0b">⭐</text>
+  </g>
+  
+  <g transform="translate(400, 400)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="400,400; 400,380; 400,400" dur="3.8s" repeatCount="indefinite"/>
+    <text font-size="35" text-anchor="middle" fill="#fbbf24">⭐</text>
+  </g>
+  
+  <g transform="translate(800, 400)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="800,400; 800,380; 800,400" dur="3.6s" repeatCount="indefinite"/>
+    <text font-size="35" text-anchor="middle" fill="#fbbf24">⭐</text>
+  </g>
+  
+  <g transform="translate(500, 450)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="500,450; 500,430; 500,450" dur="4s" repeatCount="indefinite"/>
+    <text font-size="30" text-anchor="middle" fill="#fcd34d">⭐</text>
+  </g>
+  
+  <g transform="translate(700, 450)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="700,450; 700,430; 700,450" dur="3.9s" repeatCount="indefinite"/>
+    <text font-size="30" text-anchor="middle" fill="#fcd34d">⭐</text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="100" y="515" width="1000" height="3" fill="url(#cardGrad)" opacity="0.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="3s" repeatCount="indefinite"/>
+  </rect>
+</svg>

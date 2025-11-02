@@ -1,0 +1,249 @@
+<svg width="1200" height="400" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#334155" stroke-width="1" opacity="0.15"/>
+    </pattern>
+    
+    <!-- Gradients for connections -->
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#6366f1;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ef4444;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.6" />
+    </linearGradient>
+    
+    <!-- Glowing effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Node shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.5"/>
+    </filter>
+    
+    <!-- Hexagon clip path -->
+    <clipPath id="hexagon">
+      <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Grid Background -->
+  <rect width="1200" height="400" fill="url(#grid)">
+    <animateTransform
+      attributeName="transform"
+      type="translate"
+      from="0 0"
+      to="50 50"
+      dur="20s"
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Glowing orbs in background -->
+  <!-- Background orbs - contained within card area -->
+  <circle cx="250" cy="180" r="90" fill="#6366f1" opacity="0.08">
+    <animate attributeName="cy" values="180;160;180" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  
+  
+  <circle cx="650" cy="320" r="75" fill="#3b82f6" opacity="0.06">
+    <animate attributeName="cx" values="650;670;650" dur="12s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Additional smaller orbs -->
+  <circle cx="350" cy="480" r="55" fill="#8b5cf6" opacity="0.06">
+    <animate attributeName="cy" values="480;460;480" dur="9s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="850" cy="180" r="65" fill="#f59e0b" opacity="0.05">
+    <animate attributeName="cx" values="850;830;850" dur="11s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Connection Lines -->
+  <line x1="200" y1="150" x2="400" y2="150" stroke="url(#grad1)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="200" y1="150" x2="150" y2="250" stroke="url(#grad2)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="400" y1="150" x2="500" y2="250" stroke="url(#grad3)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="3s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="300" y1="250" x2="250" y2="320" stroke="url(#grad4)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2.2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="300" y1="250" x2="350" y2="320" stroke="url(#grad1)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2.8s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="400" y1="150" x2="600" y2="180" stroke="url(#grad2)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="3.2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="600" y1="180" x2="750" y2="220" stroke="url(#grad3)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2.6s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="750" y1="220" x2="900" y2="180" stroke="url(#grad4)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="3.4s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="600" y1="180" x2="650" y2="280" stroke="url(#grad1)" stroke-width="2" opacity="0.4">
+    <animate attributeName="stroke-dasharray" values="0,500;500,0" dur="2.9s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Node 1: Server (Green) -->
+  <g transform="translate(170, 120)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#10b981" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">⚙</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="170,120; 170,115; 170,120" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 2: Database (Blue) -->
+  <g transform="translate(370, 120)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#3b82f6" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">🗄</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="370,120; 370,115; 370,120" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 3: Network (Purple) -->
+  <g transform="translate(120, 220)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#6366f1" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">🌐</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="120,220; 120,215; 120,220" dur="5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 4: Cube (Yellow) -->
+  <g transform="translate(270, 220)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#f59e0b" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="5.5s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">📦</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="270,220; 270,215; 270,220" dur="5.5s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 5: Security (Red) -->
+  <g transform="translate(470, 220)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#ef4444" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="6s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">🛡</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="470,220; 470,215; 470,220" dur="6s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 6: Config (Purple) -->
+  <g transform="translate(220, 290)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#8b5cf6" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4.2s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">⚙</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="220,290; 220,285; 220,290" dur="4.2s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 7: Cloud (Cyan) -->
+  <g transform="translate(320, 290)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#06b6d4" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4.8s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">☁</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="320,290; 320,285; 320,290" dur="4.8s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 8: Storage -->
+  <g transform="translate(570, 150)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#10b981" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="5.2s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">💾</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="570,150; 570,145; 570,150" dur="5.2s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 9: Container -->
+  <g transform="translate(720, 190)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#3b82f6" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="5.8s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">🐳</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="720,190; 720,185; 720,190" dur="5.8s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 10: Load Balancer -->
+  <g transform="translate(870, 150)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#f59e0b" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="6.2s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">⚖</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="870,150; 870,145; 870,150" dur="6.2s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Node 11: Monitoring -->
+  <g transform="translate(620, 250)">
+    <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+          fill="#8b5cf6" filter="url(#shadow)">
+      <animate attributeName="opacity" values="0.9;1;0.9" dur="4.6s" repeatCount="indefinite"/>
+    </path>
+    <text x="30" y="38" font-family="Arial, sans-serif" font-size="24" fill="#0a0e27" text-anchor="middle">📊</text>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="620,250; 620,245; 620,250" dur="4.6s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Title Section -->
+  <g transform="translate(600, 50)">
+    <!-- Logo/Icon -->
+    <g transform="translate(-50, 0)">
+      <path d="M 30,0 L 60,15 L 60,45 L 30,60 L 0,45 L 0,15 Z" 
+            fill="#6366f1" filter="url(#glow)">
+        <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <text x="30" y="38" font-family="Arial, sans-serif" font-size="28" fill="#e2e8f0" text-anchor="middle" font-weight="bold">T</text>
+    </g>
+  </g>
+</svg>
