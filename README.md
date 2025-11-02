@@ -2,7 +2,7 @@
   <div style="display: flex; flex-direction: column; width: 100%; margin: 0; padding: 0; font-size: 0;">
     <img src="assets/graph.svg" alt="Terminal Graph" style="width: 100%; display: block; margin: 0; padding: 0;">
     <img src="assets/about-me.svg" alt="Terminal About Me" style="width: 100%; display: block; margin: 0; padding: 0;">
-    <img src="assets/skills.svg" alt="Terminal Skills" style="width: 100%; display: block; margin: 0; padding: 0;">
+    <img src="assets/technologies.svg" alt="Terminal Skills" style="width: 100%; display: block; margin: 0; padding: 0;">
     <img src="assets/rate.svg" alt="Terminal Skills" style="width: 100%; display: block; margin: 0; padding: 0;">
   </div>
 

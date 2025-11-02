@@ -59,10 +59,6 @@
     Technologies
   </text>
   
-  <line x1="400" y1="160" x2="800" y2="160" stroke="#6366f1" stroke-width="2" opacity="0.5">
-    <animate attributeName="stroke-dasharray" values="0,400;400,0" dur="3s" repeatCount="indefinite"/>
-  </line>
-  
   <g transform="translate(180, 240)">
     <circle r="40" fill="#1e293b" opacity="0.9"/>
     <use xlink:href="#python-logo" x="-30" y="-30"/>
